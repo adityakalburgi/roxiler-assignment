@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 99vh;
+  border:solid;
+  background-color: #282c34;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #545353; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0e0e0e; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #040404; 
+}
+
+.App-header {
+  display: flex;
+  background-color: #282c34;
+  overflow-y: auto;
+  color: white;
+  height:85vh;
+}
+
+.App-footer {
+  display: flex;
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-top : 0.2px solid;
+  height:14.2vh;
+}
+
+
+
+.Btn-group button {
+  background-color: #7df604; 
+  border: 1px solid #7df604;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  font-size: 15px; 
+  border-radius: 1px;
+  letter-spacing: 1.5px;
+}
+
+.Above-table{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width : 80vw;
+  padding:20px;
+  position: fixed;
+  top:20px;
+}
+
+.Above-table button {
+  background-color: #7df604; 
+  border: 1px solid #7df604;
+  color: black;
+  padding: 10px 24px;
+  cursor: pointer;
+  float: left;
+  font-size: 15px; 
+  border-radius: 1px;
+  letter-spacing: 1.5px;
+}
+
+.Btn-group button:not(:last-child) {
+  border-right: none; 
+}
+
+.Btn-group button:hover {
+  background-color: #70d807 !important;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 5px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px #00000026;
+}
+.styled-table thead tr {
+  background-color: #70d807;
+  color: #060606;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #030303;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #030303;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #70d807;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #70d807;
+}
+
+
+table{
+  width: 80vw;
+}
+
+.Transaction{
+  display:flex;
+  background-color:#00000026;
+  flex-grow:1;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  overflow-y:hidden;
+}
